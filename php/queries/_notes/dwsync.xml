@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="AccountPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130098250714830838" remote="130106916640000000" />
-<file name="AddItemPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130106905694499115" remote="130106916640000000" />
-<file name="AdminAddCampusQuery.php" server="cs2.gcsu.edu/public_html/" local="130098697770959058" remote="130106916640000000" />
-<file name="AdminAddDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130098699774630374" remote="130106916640000000" />
-<file name="AdminAddUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130098382508046839" remote="130106916640000000" />
-<file name="AdminAnnouuncementsQuery.php" server="cs2.gcsu.edu/public_html/" local="130098682437532899" remote="130106916650000000" />
-<file name="AdminChangeUserEmailQuery.php" server="cs2.gcsu.edu/public_html/" local="130098692350684674" remote="130106916650000000" />
-<file name="AdminChangeUserPassQuery.php" server="cs2.gcsu.edu/public_html/" local="130098689727744711" remote="130106916650000000" />
-<file name="AdminGenerateReportQuery.php" server="cs2.gcsu.edu/public_html/" local="130098375848366845" remote="130106916650000000" />
-<file name="AdminRemoveDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130098701307736210" remote="130106916660000000" />
-<file name="AdminRemoveUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130098696387450340" remote="130106916660000000" />
-<file name="SearchPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130106910666208099" remote="130106916660000000" />
-<file name="EditDataOutput.php" server="cs2.gcsu.edu/public_html/" local="130106913808676578" remote="130106916660000000" />
-<file name="UpdateItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130106900557959244" remote="130106916660000000" />
+<file name="AccountPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130098250714830838" remote="130106933280000000" />
+<file name="AddItemPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130106905694499115" remote="130106933280000000" />
+<file name="AdminAddCampusQuery.php" server="cs2.gcsu.edu/public_html/" local="130098697770959058" remote="130106933280000000" />
+<file name="AdminAddDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130098699774630374" remote="130106933290000000" />
+<file name="AdminAddUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130098382508046839" remote="130106933290000000" />
+<file name="AdminAnnouuncementsQuery.php" server="cs2.gcsu.edu/public_html/" local="130098682437532899" remote="130106933290000000" />
+<file name="AdminChangeUserEmailQuery.php" server="cs2.gcsu.edu/public_html/" local="130098692350684674" remote="130106933290000000" />
+<file name="AdminChangeUserPassQuery.php" server="cs2.gcsu.edu/public_html/" local="130098689727744711" remote="130106933290000000" />
+<file name="AdminGenerateReportQuery.php" server="cs2.gcsu.edu/public_html/" local="130098375848366845" remote="130106933300000000" />
+<file name="AdminRemoveDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130098701307736210" remote="130106933300000000" />
+<file name="AdminRemoveUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130098696387450340" remote="130106933300000000" />
+<file name="SearchPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130106910666208099" remote="130106933300000000" />
+<file name="EditDataOutput.php" server="cs2.gcsu.edu/public_html/" local="130106913808676578" remote="130106933300000000" />
+<file name="UpdateItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130106900557959244" remote="130106933310000000" />
 </dwsync>

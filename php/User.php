@@ -91,6 +91,9 @@ class Admin extends User
         public function loadNavigation()
         {
                 User::loadNavigation();
+                if(strPos($_SERVER["REQUEST_URI"],"Admin")!=false)
+                echo '<li class="curPage"><a href="AdminAnnouncements.php">Admin Tools</a></li>';
+                else
                 echo '<li><a href="AdminAnnouncements.php">Admin Tools</a></li>';
 
         }

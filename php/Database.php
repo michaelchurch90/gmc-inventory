@@ -4,6 +4,7 @@ class Database
 {
 	private $connection;
 
+
 	private $SERVER = 'localhost';
 	private $USERNAME = 'root';
 	private $PASSWORD = 'sports11.';
