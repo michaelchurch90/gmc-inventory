@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/tableQuery.js"></script>
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p>
+Hello Stuffa
+</p>
+                <form name="searchForm" method="post" action="queries/SearchPageQuery.php">
+
+                <!--
+                The following series of code is where we establish all of the search fields.
+                
+                They are as follows: 	Assigned To, Campus, Department, Inventory #, 
+                						Manufacturer, Model, Serial #, LAN MAC, and WLAN MAC
+                -->
+                Inventory #: 
+                <input name="invNumber" type="text" size="20">
+                <br>
+                Campus: 
+                <select name="campus">
+                <?php
+				$result=$this->database->getCampuses();
+				$options = $result->getOptionList();
+				echo $options;
+  				//<option value="0">Milledgeville</option>				
+				?>
+				</select>
+                
+                <br>
+                Department: 
+                <select name="dept">
+  				<?php
+								$result=$this->database->getDepartments();
+				$options = $result->getOptionList();
+				echo $options;
+				//<option value="0">HR</option>
+				?>
+                
+				</select>
+                
+                <br>
+                Assigned To: 
+                <input name="assignedTo" type="text" size="20">
+                
+                <br>
+                Manufacturer: 
+                <input name="manufacturer" type="text" size="20">
+               <!-- <select name="manufacturer">
+  				<option value="toshiba">Toshiba</option>
+  				<option value="acer">Acer</option>
+                <option value="asus">Asus</option>
+                <option value="dell">Dell</option>
+                <option value="hp">HP</option>
+                <option value="mac">Mac</option>
+				</select>-->
+                
+                <br>
+                Model: 
+                <input name="model" type="text" size="20">
+                
+                <br>
+                Serial #: 
+                <input name="serialNum" type="text" size="20">
+                
+                <br>
+                LAN MAC: 
+                <input name="lanMAC" type="text" size="20">
+                
+                <br>
+                WLAN MAC: 
+                <input name="wanMAC" type="text" size="20">
+                
+                <br>
+                
+                <input name="submitSearch" type="submit" value="Search">
+                
+                </form>
+<div class='outputDiv'>
+
+</div>
+</body>
+</html>
