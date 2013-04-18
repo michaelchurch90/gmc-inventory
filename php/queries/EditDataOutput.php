@@ -55,7 +55,7 @@
 				</select>-->
                 <br/>
                 Item
-                <input name="item" type="text" size="20">
+                <input name="item" type="text" size="20" value="<?php echo $_POST['Item'];?>">
                 <br/>
                 <br/>
                 Model: 

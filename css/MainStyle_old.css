@@ -1,18 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-/*Colors:
-Dark Red: #A3050D
-Red:#FB101C
-Middling Red #BC383F
-Black
-Milder black:#241D1D
-
-*/
-body, header, footer, .header, .footer
-{
-display:block;
-}
-
 h1, h2, h3, h4, h5, h6, p {
         margin-top: 0;
         padding-right: 15px;
@@ -20,35 +7,35 @@ h1, h2, h3, h4, h5, h6, p {
 }
 body
 {
-        background:#FB101C;
+        background:#015965;
         margin:0;
         padding:0;
-		width:1000px;
-		margin-left:auto;
-		margin-right:auto;
 }
 
 .header
 {
         margin:0px;
-		margin-left:auto;
-		margin-right:auto;
+        float:left;
         clear:both;
-        background:#BC383F;
-		width:90%;
-		     margin-top:0px;
-        text-align:center;
+        background:#36BBCE;
+		width:100%;
 }
 .header h1
 {
-    font-family:Tahoma, Geneva, sans-serif;
+        margin-top:0px;
+        text-align:center;
+        font-family:Tahoma, Geneva, sans-serif;
         font-size:60px;
+        margin:0;
+		margin-bottom:3%;
+        
+        
 }
 .body
 {
         min-height:310px;
         float:left;
-        background:#BC383F;
+        background:#CCC;
 		width:100%;
 }
 .bodyContents
@@ -60,8 +47,6 @@ body
         min-height:300px;
         float:left;
         width:100%;
-		border:10px solid black;
-		padding:15px;
 }
 .navigation
 {
@@ -71,25 +56,13 @@ body
         width:100%;
 		margin-left:2%;
 }
-
-#form1
-{
-left-margin:50%;
-}
 /* used for the navigation bar*/
-
 ul.nav
 {
         list-style-type:none;
         padding:0;
         margin:0;
         margin-left:10px;
-}
-table
-{
-display:block;
-float:left;
-width:60%;
 }
 ul.nav li
 {
@@ -98,10 +71,8 @@ ul.nav li
         margin:0;
         margin-right:1%;
         width:15%;
-        background:black;    /* color */
+        background:#1F6B75;    /* color */
         text-align:center;
-		border-top-left-radius:50px;
-		border-top-right-radius:50px;
 }
 ul.nav a, ul.nav a:visited 
 {
@@ -110,10 +81,8 @@ ul.nav a, ul.nav a:visited
 		color:#FFF;
 }
 ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
-        background: #2B2323;  /* color */
+        background: #5FC0CE;  /* color */
         color: #FFF;
-				border-top-left-radius:50px;
-		border-top-right-radius:50px;
 }
 .divAdminNav
 {
@@ -130,7 +99,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
         padding:0;
         margin:0;
 		width:100%;
-		list-style-type:none;-
+		list-style-type:none;
 	display:block;
 }
 
@@ -168,11 +137,16 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 form
 {
-display:block;
-float:left;
-width:20%;
+        float:left;
 }
-#form1
+
+
+.trHover
 {
-text-align:center;
+	background:black;
+}
+
+li.curPage a, li.curPage a:visited
+{
+	background:black;
 }
