@@ -176,3 +176,17 @@ width:20%;
 {
 text-align:center;
 }
+.divAdminNav ul a:hover, .divAdminNav ul a:active, .divAdminNav ul a:focus { 
+        background: #BC383F;  /* color */
+        color: #FFF;
+		display:block;
+}
+
+
+i.curPage a, li.curPage a:visited
+{
+	background:#241D1D;
+}
+
+
+

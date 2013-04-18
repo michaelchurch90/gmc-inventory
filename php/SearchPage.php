@@ -98,7 +98,7 @@ class SearchScreen extends BasicPage
                 <br/>
                 Comments:
                 <br/>
-                <textarea name="Comments" rows='5' cols="40">
+                <textarea name="Comments" rows='5' cols="40" width="100px">
         		</textarea>
                 <br/>
                  <input name="submitSearch" type="submit" value="Search">
