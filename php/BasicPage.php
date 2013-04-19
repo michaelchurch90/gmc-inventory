@@ -20,7 +20,6 @@ class BasicPage
 				$this->getUser();
                 
         }
-        
         public function loadPage()
         {
                 $this->loadHeader();

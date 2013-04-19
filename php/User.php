@@ -44,6 +44,7 @@ class User
         <li <?php if(strPos($_SERVER["REQUEST_URI"],"SearchPage.php")!=false) echo "class='curPage'"?>><a href="SearchPage.php">Search</a></li>
         <li <?php if(strPos($_SERVER["REQUEST_URI"],"AddItemPage.php")!=false) echo "class='curPage'"?>><a href="AddItemPage.php">Add Item</a></li>
         <li <?php if(strPos($_SERVER["REQUEST_URI"],"AccountPage.php")!=false) echo "class='curPage'"?>><a href="AccountPage.php">Account</a></li>
+        
         <?php
 		}
 		public function isLoggedIn()
@@ -90,6 +91,7 @@ class Admin extends User
     
         public function loadNavigation()
         {
+			//echo "test";
                 User::loadNavigation();
                 if(strPos($_SERVER["REQUEST_URI"],"Admin")!=false)
                 echo '<li class="curPage"><a href="AdminAnnouncements.php">Admin Tools</a></li>';

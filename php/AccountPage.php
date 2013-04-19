@@ -12,6 +12,10 @@ class HomeScreen extends BasicPage
 				<script src="../js/EditAccount.js"></script>
 			<?php
 		}
+		public function loadPageTitle()
+ 		{
+                echo "<title>Account</title>";
+        }
         //put the form elements in here for each page
         public function loadBody()
         {

@@ -10,6 +10,7 @@ class AdminAnnouncements extends AdminBase
 				<script src="../js/AddAnnouncement.js"></script>
 			<?php
 		}
+
 	public function loadBody()
 	{
 		?>

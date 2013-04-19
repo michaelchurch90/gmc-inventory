@@ -11,7 +11,10 @@ class SearchScreen extends BasicPage
 				<script src="../js/SearchPage.js"></script>
 			<?php
 		}
-
+		public function loadPageTitle()
+ 		{
+                echo "<title>Search</title>";
+        }
         public function loadBody()
         {
                 ?>

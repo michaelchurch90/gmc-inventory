@@ -16,7 +16,10 @@ class AdminBase extends BasicPage
                 echo '</div>';
                 $this->loadFooter();
         }
-		
+		public function loadPageTitle()
+ 		{
+                echo "<title>Admin</title>";
+        }
 		public function loadAdminNav()
 		{
 			?>

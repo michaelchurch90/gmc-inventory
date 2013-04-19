@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="jquery-1.9.1.min.js" server="cs2.gcsu.edu/public_html/" local="130101210232726062" remote="130106916730000000" />
-<file name="EditAccount.js" server="cs2.gcsu.edu/public_html/" local="130105120246533651" remote="130106916730000000" />
-<file name="AddItem.js" server="cs2.gcsu.edu/public_html/" local="130105118694863253" remote="130106916720000000" />
-<file name="AddCampus.js" server="cs2.gcsu.edu/public_html/" local="130105136398732315" remote="130106916720000000" />
-<file name="AddDepartment.js" server="cs2.gcsu.edu/public_html/" local="130105143898986969" remote="130106916720000000" />
-<file name="AddUser.js" server="cs2.gcsu.edu/public_html/" local="130105125985690261" remote="130106916720000000" />
-<file name="AddAnnouncement.js" server="cs2.gcsu.edu/public_html/" local="130105122421720530" remote="130106916710000000" />
-<file name="AdminEditUser.js" server="cs2.gcsu.edu/public_html/" local="130105135910168375" remote="130106916720000000" />
-<file name="AdminReportQuery.js" server="cs2.gcsu.edu/public_html/" local="130105124768661086" remote="130106916730000000" />
-<file name="SearchPage.js" server="cs2.gcsu.edu/public_html/" local="130106913510150863" remote="130106916740000000" />
+<file name="jquery-1.9.1.min.js" server="cs2.gcsu.edu/public_html/" local="130101210232726062" remote="130108702060000000" />
+<file name="EditAccount.js" server="cs2.gcsu.edu/public_html/" local="130105120246533651" remote="130108702050000000" />
+<file name="AddItem.js" server="cs2.gcsu.edu/public_html/" local="130105118694863253" remote="130108702040000000" />
+<file name="AddCampus.js" server="cs2.gcsu.edu/public_html/" local="130105136398732315" remote="130108702040000000" />
+<file name="AddDepartment.js" server="cs2.gcsu.edu/public_html/" local="130105143898986969" remote="130108702040000000" />
+<file name="AddUser.js" server="cs2.gcsu.edu/public_html/" local="130105125985690261" remote="130108702050000000" />
+<file name="AddAnnouncement.js" server="cs2.gcsu.edu/public_html/" local="130105122421720530" remote="130108702040000000" />
+<file name="AdminEditUser.js" server="cs2.gcsu.edu/public_html/" local="130105135910168375" remote="130108702050000000" />
+<file name="AdminReportQuery.js" server="cs2.gcsu.edu/public_html/" local="130105124768661086" remote="130108702050000000" />
+<file name="SearchPage.js" server="cs2.gcsu.edu/public_html/" local="130106913510150863" remote="130108702060000000" />
 </dwsync>

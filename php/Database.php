@@ -4,7 +4,7 @@ class Database
 {
 	private $connection;
 
-
+/*
 	private $SERVER = 'localhost';
 	private $USERNAME = 'root';
 	private $PASSWORD = 'sports11.';
@@ -15,7 +15,7 @@ class Database
 	private $USERNAME = 'mchurch2';
 	private $PASSWORD = 'sports11.';
 	private $DATABASE = 'gmc_inventory';
-	*/
+	
 	public function __construct()
 	{
 		//make sure only one instance of connection is established
@@ -91,18 +91,19 @@ class Database
 		{
 		return FALSE;
 		}
-		else
-		if($result->tuples[0][0]==1)
+		elseif($result->tuples[0][0]==TRUE)
 		{
+			//echo $result->tuples[0][0];
 			//echo "made admin";
 		$returnUser = new Admin($UserName,$Password,$result->tuples[0][1],$result->tuples[0][2],$result->tuples[0][3]);
 		}
-		elseif ($result->tuples[0][0]==0)
+		elseif ($result->tuples[0][0]==FALSE)
 		{
+			//echo $result->tuples[0][0];
 			//echo "made user";
 		$returnUser = new User($UserName,$Password,$result->tuples[0][1],$result->tuples[0][2],$result->tuples[0][3]);
 		}
-		else "Wrong Database value for isAdmin: talk to database administrator";
+		else echo "Wrong Database value for isAdmin: talk to database administrator";
 		
 		return $returnUser;
 		
@@ -118,7 +119,7 @@ class Database
 	}
 	public function getAnnouncements()
 	{
-		$query = "SELECT content AS Announcements FROM announcements";
+		$query = "SELECT Date, content AS Announcements FROM announcements ORDER BY Date DESC LIMIT 10";
 		$table = $this->queryForResult($query);
 		return $table;
 	}

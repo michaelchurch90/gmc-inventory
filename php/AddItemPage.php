@@ -71,7 +71,7 @@ class AddItemPage extends BasicPage
                 <option value="mac">Mac</option>
 				</select>-->
                 <br>
-                Item
+                Item:<br/>
                 <input name="item" type="text" size="20">
                 <br>
                 Model: 
