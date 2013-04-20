@@ -189,7 +189,10 @@ li.curPage a, li.curPage a:visited
 {
 	background:#241D1D;
 }
-
+#divSearchForm h2
+{
+	width:50px;
+}
 .trHover
 {
 	background:white;

@@ -21,7 +21,7 @@ class SearchScreen extends BasicPage
                 <!--
                 Divider for the left panel with the searching criteria.
                 -->
-                <div name="searchForm">
+                <div name="searchForm" id="divSeachForm">
                 
                 <h2>
                 Search Inventory
