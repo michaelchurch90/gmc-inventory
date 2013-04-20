@@ -1,21 +1,24 @@
 // JavaScript Document
 $(document).ready(function(){
-
-	
-
-	  
 	  $("#searchForm").submit(function(e)
 	  {
-		  e.preventDefault();
-    
-	
-	
+		e.preventDefault();
 		$.post($(this).attr('action'),$("#searchForm").serialize(),
 			function(data,status){
 				$("div.outputDiv").empty();
 				$("div.outputDiv").append(data);
 				
-				
+								$("tr.highlightable").hover(
+	  				function()
+					{
+						$(this).addClass("trHover");
+
+					},
+					function()
+					{
+					$(this).removeClass("trHover");
+					}
+	 			 ); //highlightable.hover
 				 $("tr.highlightable").click(function()
 				 {
 					 	
@@ -51,36 +54,34 @@ $(document).ready(function(){
 						{
 							$("div.outputDiv").empty();
 							$("div.outputDiv").append(data);
-							$("#updateForm").submit(function(e)
-	  {
-		  //e.preventDefault();
-	  });
+							 $("#updateForm").submit(function(e){
+							  e.preventDefault();
+							  $.post($(this).attr('action'),$("#updateForm").serialize(),
+								function(data,status){
+									alert("Item updated");
+									$("div.outputDiv").empty();
+									
 						});
+					});//post
 						
 						
 						
 						
-				 });
-				$("tr.highlightable").hover(
-	  				function()
-					{
-						$(this).addClass("trHover");
+				 }); //highlightable.click
 
-					},
-					function()
-					{
-					$(this).removeClass("trHover");
-					}
-	 			 );
 				 
 				
 				 
 			});
-	  });
+	 	});
 	  
-	  
+	 
+		  
+		  
+	
+	}); //serachform.submit
 	  	
 	
 
 			
-});
+}); //document.ready

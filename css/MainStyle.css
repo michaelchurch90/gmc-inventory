@@ -20,10 +20,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 body
 {
-        background:#FB101C;
+        background: #A3050D;
         margin:0;
         padding:0;
-		width:1000px;
+		width:1200px;
 		margin-left:auto;
 		margin-right:auto;
 }
@@ -34,15 +34,17 @@ body
 		margin-left:auto;
 		margin-right:auto;
         clear:both;
-        background:#BC383F;
-		width:90%;
+        background:#241D1D;
+		width:100%;
 		     margin-top:0px;
         text-align:center;
+		color:white;
 }
 .header h1
 {
     font-family:Tahoma, Geneva, sans-serif;
         font-size:60px;
+		padding:0;
 }
 .body
 {
@@ -183,10 +185,17 @@ text-align:center;
 }
 
 
-i.curPage a, li.curPage a:visited
+li.curPage a, li.curPage a:visited
 {
 	background:#241D1D;
 }
+
+.trHover
+{
+	background:white;
+}
+
+
 
 
 
