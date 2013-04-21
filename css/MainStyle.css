@@ -197,7 +197,11 @@ li.curPage a, li.curPage a:visited
 {
 	background:white;
 }
-
+.outputDiv
+{
+	width:200px;
+	float:left;
+}
 
 
 

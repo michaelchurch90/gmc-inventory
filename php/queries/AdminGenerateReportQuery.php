@@ -10,21 +10,25 @@ $model = $_POST['model'];
 $serialNum = $_POST['serialNum'];
 $lanMAC = $_POST['lanMAC'];
 $wanMAC = $_POST['wanMAC'];
+$startDate= $_POST['startDate'];
+$endDate=$_POST['lastDate'];
+$status=$_POST['Status'];
+$item=$_POST['item'];
 
+if($campus=="any")
+	$campus="";
+if($dept=="any")
+	$dept="";
+if($status=="any")
+	$status="";
+if($item=="any")
+	$item="";	
+
+
+	
 $db = new Database();
-/*
-$invNumber = 0;
-$campus = 0;
-$dept = 0;
-$assignedTo = 'Michael';
-$manufacturer = 'Toshiba';
-$model = 'Model';
-$serialNum = '0001';
-$lanMAC = '1adsf';
-$wanMAC = '2345';
 
-*/
-$resultTable = $db->searchInventory($invNumber,$campus,$dept ,$assignedTo,$manufacturer,$model,$serialNum,$lanMAC,$wanMAC);
+$resultTable = $db->searchInventory($invNumber,$campus,$dept ,$assignedTo,$manufacturer,$model,$serialNum,$lanMAC,$wanMAC, $status,$item,$startDate,$endDate);
 //$resultTable = $db->searchInventory();
 $resultTable->toTable();
 

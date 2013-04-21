@@ -124,10 +124,15 @@ class Database
 		return $table;
 	}
 	
-	public function searchInventory($invNumber='',$campus='',$dept='',$assignedTo='',$manufacturer='' ,$model='' ,$serialNum='',$lanMAC='',$wanMAC='', $status='',$item='')
+	public function searchInventory($invNumber='',$campus='',$dept='',$assignedTo='',$manufacturer='' ,$model='' ,$serialNum='',$lanMAC='',$wanMAC='', $status='',$item='',$startDate='',$endDate='')
 	{
+		
+		if ($startDate!="")
+			$startDate= "'+(SELECT min(lastUpdate) FROM inventory)+'";
+		if($endDate=="")
+			$endDate="'+(SELECT max(lastUpdate) FROM inventory)+'";
 		$query = sprintf("
-			SELECT * FROM inventory 
+			SELECT ID, Assigned, Campus, Department, Item, Manufacturer, Model, SerialNum AS 'Serial Number', LAN_MAC, WLAN_MAC,Status, Comment,lastUpdate AS 'Last Update' FROM inventory 
 			WHERE ID LIKE '%%%s%%' 
 			AND Campus LIKE '%%%s%%' 
 			AND Department LIKE '%%%s%%' 
@@ -138,7 +143,8 @@ class Database
 			AND LAN_MAC LIKE '%%%s%%'
 			AND WLAN_MAC LIKE '%%%s%%'
 			AND Status LIKE '%%%s%%'
-			AND Item LIKE '%%%s%%'",
+			AND Item LIKE '%%%s%%'
+			AND lastUpdate BETWEEN '%s' AND '%s';",
 			mysql_real_escape_string($invNumber),
 			mysql_real_escape_string($campus),
 			mysql_real_escape_string($dept),
@@ -149,12 +155,38 @@ class Database
 			mysql_real_escape_string($lanMAC),
 			mysql_real_escape_string($wanMAC),
 			mysql_real_escape_string($status),
-			mysql_real_escape_string($item));
+			mysql_real_escape_string($item),
+			$startDate,
+			$endDate);
+			
 			
 			$result = $this->queryForResult($query);
 			return $result;
 	}
-	
+	public function getDistinctCampuses()
+	{
+		$query = "SELECT DISTINCT Campus FROM inventory";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
+	public function getDistinctDepartments()
+	{
+		$query = "SELECT DISTINCT Department FROM inventory";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
+		public function getDistinctItemTypes()
+	{
+		$query = "SELECT DISTINCT Item FROM inventory";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
+		public function getDistinctStatuses()
+	{
+		$query = "SELECT DISTINCT Status FROM inventory";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
 	public function getCampuses()
 	{
 		

@@ -41,7 +41,7 @@ class SearchScreen extends BasicPage
                 <select name="campus">
                 <option value="any">Any</option>
                 <?php
-				$result=$this->database->getCampuses();
+				$result=$this->database->getDistinctCampuses();
 				$options = $result->getOptionList();
 				echo $options;
   				//<option value="0">Milledgeville</option>				
@@ -53,7 +53,7 @@ class SearchScreen extends BasicPage
                 <select name="dept">
                 <option value="any">Any</option>
   				<?php
-								$result=$this->database->getDepartments();
+								$result=$this->database->getDistinctDepartments();
 				$options = $result->getOptionList();
 				echo $options;
 				//<option value="0">HR</option>
@@ -83,7 +83,7 @@ class SearchScreen extends BasicPage
                 <select name="item">
                 <option value="any">Any</option>
                 <?php
-				$options = $this->database->getItemTypes();
+				$options = $this->database->getDistinctItemTypes();
 				echo $options->getOptionList();
 				?>
                 </select>
@@ -111,7 +111,7 @@ class SearchScreen extends BasicPage
                 <select name="Status">
                 <option value="any">Any</option>
                 <?php
-				$options = $this->database->getStatuses();
+				$options = $this->database->getDistinctStatuses();
 				echo $options->getOptionList();
 				?>
                 </select>

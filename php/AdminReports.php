@@ -13,6 +13,7 @@ class AdminReports extends AdminBase
 	public function loadBody()
 	{
 		?>
+        <div id="divAdminReportInput">
         <h2>Generate Report</h2>
         <form name="reportForm" method="post" action="queries/AdminGenerateReportQuery.php">
 
@@ -27,8 +28,9 @@ class AdminReports extends AdminBase
                 <br>
                 Campus: 
                 <select name="campus">
+                <option value="any">Any</option>
                 <?php
-				$result=$this->database->getCampuses();
+				$result=$this->database->getDistinctCampuses();
 				$options = $result->getOptionList();
 				echo $options;
   				//<option value="0">Milledgeville</option>				
@@ -38,8 +40,9 @@ class AdminReports extends AdminBase
                 <br>
                 Department: 
                 <select name="dept">
+				<option value="any">Any</option>
   				<?php
-								$result=$this->database->getDepartments();
+				$result=$this->database->getDistinctDepartments();
 				$options = $result->getOptionList();
 				echo $options;
 				//<option value="0">HR</option>
@@ -64,6 +67,16 @@ class AdminReports extends AdminBase
 				</select>-->
                 
                 <br>
+                Item Type:
+                <!--<input name="item" type="text" size="20">-->
+                <select name="item">
+                <option value="any">Any</option>
+                <?php
+				$options = $this->database->getDistinctItemTypes();
+				echo $options->getOptionList();
+				?>
+                </select>
+                <br/>
                 Model: 
                 <input name="model" type="text" size="20">
                 
@@ -80,11 +93,28 @@ class AdminReports extends AdminBase
                 <input name="wanMAC" type="text" size="20">
                 
                 <br>
-                
+                Status:
+                <!--<input name="Status" type = "text" size = "20" >-->
+                <select name="Status">
+                <option value="any">Any</option>
+                <?php
+				$options = $this->database->getDistinctStatuses();
+				echo $options->getOptionList();
+				?>
+                </select>
+
+                <br/>
+                First Date:
+                <br/>
+                <input id="startDate" name="startDate" type="date"/>
+                <br/>
+                Last Date:
+                <input id="lastDate" name="lastDate" type="date"/>
+                <br/>
                 <input name="submitSearch" type="submit" value="Generate">
                 
                 </form>
-                
+                </div>
                 <div class="outputDiv">
                 </div>
         
