@@ -78,6 +78,16 @@ class SearchScreen extends BasicPage
 				</select>-->
                 
                 <br>
+                Item Type:
+                <!--<input name="item" type="text" size="20">-->
+                <select name="item">
+                <option value="any">Any</option>
+                <?php
+				$options = $this->database->getItemTypes();
+				echo $options->getOptionList();
+				?>
+                </select>
+                <br/>
                 Model: 
                 <input name="model" type="text" size="20">
                 
@@ -96,8 +106,16 @@ class SearchScreen extends BasicPage
                 <br>
                 
                
-                                Status:
-                <input name="status" type = "text" size = "20" >
+                Status:
+                <!--<input name="Status" type = "text" size = "20" >-->
+                <select name="Status">
+                <option value="any">Any</option>
+                <?php
+				$options = $this->database->getStatuses();
+				echo $options->getOptionList();
+				?>
+                </select>
+
                 <br/>
                 Comments:
                 <br/>

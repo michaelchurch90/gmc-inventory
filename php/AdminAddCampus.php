@@ -13,14 +13,29 @@ class AdminAddCampus extends AdminBase
 	public function loadBody()
 	{
 		?>
-        <h2>Add Campus</h2>
-        <form action="queries/AdminAddCampusQuery.php" method="post" name="adminEditUser">
+        <h2>Add/ Remove Campus</h2>
+        <form id="frmCampusAdd" action="queries/AdminAddCampusQuery.php" method="post" name="adminAddCampus">
 
         <input type="text" name="campus" placeholder="Campus Name"/>
         <br/>
         <input type="submit" name="Submit" value="Add Campus"/>
         </form>
         
+        <form  id="frmCampusRemove" action="queries/AdminRemoveCampusQuery.php" method="post" name="adminRemoveCampus">
+		<select name="removeCampus">
+        <?php
+        	//<option value="Milledgeville">Milledgeville</option>
+            //<option value="Augusta">Augusta</option>
+											$result=$this->database->getCampuses();
+				$options = $result->getOptionList(0,0);
+				echo $options;
+			
+			?>
+        </select>
+        <br/>
+        <input type="submit" name="Submit" value="Remove Campus"/>
+
+        </form>
         <?php
 	}
 }

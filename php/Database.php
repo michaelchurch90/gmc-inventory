@@ -124,7 +124,7 @@ class Database
 		return $table;
 	}
 	
-	public function searchInventory($invNumber='',$campus='',$dept='',$assignedTo='',$manufacturer='' ,$model='' ,$serialNum='',$lanMAC='',$wanMAC='')
+	public function searchInventory($invNumber='',$campus='',$dept='',$assignedTo='',$manufacturer='' ,$model='' ,$serialNum='',$lanMAC='',$wanMAC='', $status='',$item='')
 	{
 		$query = sprintf("
 			SELECT * FROM inventory 
@@ -136,7 +136,9 @@ class Database
 			AND Model LIKE '%%%s%%'
 			AND SerialNum LIKE '%%%s%%'
 			AND LAN_MAC LIKE '%%%s%%'
-			AND WLAN_MAC LIKE '%%%s%%'",
+			AND WLAN_MAC LIKE '%%%s%%'
+			AND Status LIKE '%%%s%%'
+			AND Item LIKE '%%%s%%'",
 			mysql_real_escape_string($invNumber),
 			mysql_real_escape_string($campus),
 			mysql_real_escape_string($dept),
@@ -145,7 +147,9 @@ class Database
 			mysql_real_escape_string($model),
 			mysql_real_escape_string($serialNum),
 			mysql_real_escape_string($lanMAC),
-			mysql_real_escape_string($wanMAC));
+			mysql_real_escape_string($wanMAC),
+			mysql_real_escape_string($status),
+			mysql_real_escape_string($item));
 			
 			$result = $this->queryForResult($query);
 			return $result;
@@ -162,6 +166,19 @@ class Database
 	public function getDepartments()
 	{
 		$query = "SELECT Name FROM department";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
+	
+	public function getItemTypes()
+	{
+		$query = "SELECT Name FROM items";
+		$result = $this->queryForResult($query);
+		return $result;
+	}
+	public function getStatuses()
+	{
+		$query = "SELECT Name FROM statuses";
 		$result = $this->queryForResult($query);
 		return $result;
 	}
@@ -211,11 +228,39 @@ class Database
 		$query = sprintf("INSERT INTO department (Name) VALUES ('%s')",  mysql_real_escape_string($department));
 		$this->query($query);
 	}
+	public function AdminAddStatus($status)
+	{
+		$query = sprintf("INSERT INTO statuses (Name) VALUES ('%s')",  mysql_real_escape_string($status));
+		$this->query($query);
+	}
+	public function AdminAddItemType($item)
+	{
+		$query = sprintf("INSERT INTO items (Name) VALUES ('%s')",  mysql_real_escape_string($item));
+		$this->query($query);
+	}
 	
 	public function AdminRemoveDepartment($department)
 	{
 		$query = sprintf("DELETE FROM department WHERE Name = '%s'",
 			mysql_real_escape_string($department));
+		$this->query($query);
+	}
+	public function AdminRemoveStatus($status)
+	{
+		$query = sprintf("DELETE FROM statuses WHERE Name = '%s'",
+			mysql_real_escape_string($status));
+		$this->query($query);
+	}
+	public function AdminRemoveItem($item)
+	{
+		$query = sprintf("DELETE FROM items WHERE Name = '%s'",
+			mysql_real_escape_string($item));
+		$this->query($query);
+	}
+	public function AdminRemoveCampus($campus)
+	{
+		$query = sprintf("DELETE FROM campus WHERE Name = '%s'",
+			mysql_real_escape_string($campus));
 		$this->query($query);
 	}
 	

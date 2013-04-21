@@ -9,12 +9,16 @@ $model = $_POST['model'];
 $serialNum = $_POST['serialNum'];
 $lanMAC = $_POST['lanMAC'];
 $wanMAC = $_POST['wanMAC'];
-
-
+$status=$_POST['Status'];
+$item=$_POST['item'];
 if($dept=='any')
 	$dept="";
 if($campus=='any')
 	$campus="";
+if($status=='any')
+	$status='';
+if($item=='any')
+	$item ='';
 $db = new Database();
 /*
 $invNumber = 0;
@@ -28,7 +32,7 @@ $lanMAC = '1adsf';
 $wanMAC = '2345';
 
 */
-$resultTable = $db->searchInventory($invNumber,$campus,$dept ,$assignedTo,$manufacturer,$model,$serialNum,$lanMAC,$wanMAC);
+$resultTable = $db->searchInventory($invNumber,$campus,$dept ,$assignedTo,$manufacturer,$model,$serialNum,$lanMAC,$wanMAC, $status,$item);
 //$resultTable = $db->searchInventory();
 $resultTable->toTable();
 

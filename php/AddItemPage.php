@@ -71,8 +71,14 @@ class AddItemPage extends BasicPage
                 <option value="mac">Mac</option>
 				</select>-->
                 <br>
-                Item:<br/>
-                <input name="item" type="text" size="20">
+                Item Type:<br/>
+                <!--<input name="item" type="text" size="20">-->
+                <select name="item">
+                <?php
+				$options = $this->database->getItemTypes();
+				echo $options->getOptionList();
+				?>
+                </select>
                 <br>
                 Model: 
                 <input name="model" type="text" size="20">
@@ -89,8 +95,15 @@ class AddItemPage extends BasicPage
                 WLAN MAC: 
                 <input name="wanMAC" type="text" size="20">
                 <br>
-                                Status:
-                <input name="Status" type = "text" size = "20">
+                Status:
+                <!--<input name="Status" type = "text" size = "20">-->
+                <select name="Status">
+                 
+                <?php
+				$options = $this->database->getStatuses();
+				echo $options->getOptionList();
+				?>
+                </select>
                 <br/>
                 Comments:
                 <br/>

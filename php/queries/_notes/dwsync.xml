@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="AccountPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701060998084" remote="130109703670000000" />
-<file name="AddItemPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701060998084" remote="130109703680000000" />
-<file name="AdminAddCampusQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061008085" remote="130109703680000000" />
-<file name="AdminAddDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061008085" remote="130109703680000000" />
-<file name="AdminAddUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061018086" remote="130109703680000000" />
-<file name="AdminAnnouuncementsQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061018086" remote="130109703680000000" />
-<file name="AdminChangeUserEmailQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109703690000000" />
-<file name="AdminChangeUserPassQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109703690000000" />
-<file name="AdminGenerateReportQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109703690000000" />
-<file name="AdminRemoveDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109703690000000" />
-<file name="AdminRemoveUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109703700000000" />
-<file name="SearchPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061048087" remote="130109703700000000" />
-<file name="EditDataOutput.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109703700000000" />
-<file name="UpdateItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061058088" remote="130109703700000000" />
+<file name="AccountPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701060998084" remote="130109861260000000" />
+<file name="AddItemPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701060998084" remote="130109861260000000" />
+<file name="AdminAddCampusQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061008085" remote="130109861270000000" />
+<file name="AdminAddDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061008085" remote="130109861270000000" />
+<file name="AdminAddUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061018086" remote="130109861270000000" />
+<file name="AdminAnnouuncementsQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061018086" remote="130109861280000000" />
+<file name="AdminChangeUserEmailQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109861280000000" />
+<file name="AdminChangeUserPassQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109861280000000" />
+<file name="AdminGenerateReportQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061028086" remote="130109861280000000" />
+<file name="AdminRemoveDepartmentQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109861290000000" />
+<file name="AdminRemoveUserQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109861290000000" />
+<file name="SearchPageQuery.php" server="cs2.gcsu.edu/public_html/" local="130109836774667190" remote="130109861300000000" />
+<file name="EditDataOutput.php" server="cs2.gcsu.edu/public_html/" local="130109701061038087" remote="130109861300000000" />
+<file name="UpdateItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130109701061058088" remote="130109861300000000" />
 <file name="AccountPageQuery.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060998084" remote="130109701060000000" />
 <file name="AddItemPageQuery.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060998084" remote="130109701060000000" />
 <file name="AdminAddCampusQuery.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701061008085" remote="130109701060000000" />
@@ -28,4 +28,9 @@
 <file name="EditDataOutput.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701061038087" remote="130109701060000000" />
 <file name="SearchPageQuery.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701061048087" remote="130109701060000000" />
 <file name="UpdateItemQuery.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701061058088" remote="130109701060000000" />
+<file name="AdminAddItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130109856370698019" remote="130109861270000000" />
+<file name="AdminAddStatusQuery.php" server="cs2.gcsu.edu/public_html/" local="130109846119291672" remote="130109861270000000" />
+<file name="AdminRemoveItemQuery.php" server="cs2.gcsu.edu/public_html/" local="130109847881672474" remote="130109861290000000" />
+<file name="AdminRemoveStatusQuery.php" server="cs2.gcsu.edu/public_html/" local="130109847492300203" remote="130109861290000000" />
+<file name="AdminRemoveCampusQuery.php" server="cs2.gcsu.edu/public_html/" local="130109859389190666" remote="130109861290000000" />
 </dwsync>
