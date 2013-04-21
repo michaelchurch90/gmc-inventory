@@ -36,7 +36,7 @@ class SearchScreen extends BasicPage
                 -->
                 Inventory #: 
                 <input name="invNumber" type="text" size="20">
-                <br>
+                <br/>
                 Campus: 
                 <select name="campus">
                 <option value="any">Any</option>
@@ -48,7 +48,7 @@ class SearchScreen extends BasicPage
 				?>
 				</select>
                 
-                <br>
+                <br/>
                 Department: 
                 <select name="dept">
                 <option value="any">Any</option>
@@ -61,11 +61,11 @@ class SearchScreen extends BasicPage
                 
 				</select>
                 
-                <br>
+                <br/>
                 Assigned To: 
                 <input name="assignedTo" type="text" size="20">
                 
-                <br>
+                <br/>
                 Manufacturer: 
                 <input name="manufacturer" type="text" size="20">
                <!-- <select name="manufacturer">
@@ -77,7 +77,7 @@ class SearchScreen extends BasicPage
                 <option value="mac">Mac</option>
 				</select>-->
                 
-                <br>
+                <br/>
                 Item Type:
                 <!--<input name="item" type="text" size="20">-->
                 <select name="item">

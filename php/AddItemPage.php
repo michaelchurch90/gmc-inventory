@@ -23,7 +23,7 @@ class AddItemPage extends BasicPage
                 <h2>
                 Add Item
                 </h2>
-                <form name="addItemForm" method="post"  action="queries/AddItemPageQuery.php">
+                <form id="addItemForm" name="addItemForm" method="post"  onsubmit="return validateForm()" action="queries/AddItemPageQuery.php" >
 
                 <!--
                 The following series of code is where we establish all of the search fields.
@@ -57,7 +57,7 @@ class AddItemPage extends BasicPage
                 
                 <br>
                 Assigned To: 
-                <input name="assignedTo" type="text" size="20">
+                <input name="assignedTo" type="text" size="20" id="assignedTo"><span style="color:red;" id="assignedToError"> </span>
                 
                 <br>
                 Manufacturer: 
@@ -107,7 +107,8 @@ class AddItemPage extends BasicPage
                 <br/>
                 Comments:
                 <br/>
-                <textarea name="Comment" rows='10' cols="80"></textarea>
+                <textarea id="Comment" name="Comment" rows='10' cols="80"></textarea><span style="color:red;" id="commentError"> </span>
+
                 <br/>
                 <input name="addItem" type="submit" value="Add Item">
                 

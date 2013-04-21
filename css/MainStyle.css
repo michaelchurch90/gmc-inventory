@@ -52,7 +52,7 @@ padding-right:50px;
         min-height:310px;
         float:left;
         background:#BC383F;
-		width:100%;
+		min-width:100%;
 }
 .bodyContents
 {
@@ -62,7 +62,7 @@ padding-right:50px;
         background:#CCC;
         min-height:300px;
         float:left;
-        width:100%;
+        min-width:100%;
 		border:10px solid black;
 		padding:15px;
 }
@@ -92,7 +92,6 @@ table
 {
 display:block;
 float:left;
-width:60%;
 }
 ul.nav li
 {
@@ -163,7 +162,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 .divAdminBodyContents
 {
 	float:left;
-	width:80%;
+	min-width:80%;
 	background:#EBEBEB;
 	margin-top:1%;
 	padding-left:2%;
@@ -171,9 +170,8 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 }
 form
 {
-display:block;
-float:left;
-width:20%;
+
+padding:10px;
 }
 #form1
 {
@@ -203,9 +201,11 @@ li.curPage a, li.curPage a:visited
 .outputDiv
 {
 font-size:14px;
-width:80%;
+min-width:80%;
 float:left;
 }
+
+
 .trHover
 {
 	background:white;

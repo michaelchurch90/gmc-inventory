@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="jquery-1.9.1.min.js" server="cs2.gcsu.edu/public_html/" local="130110501712491139" remote="130110535060000000" />
-<file name="EditAccount.js" server="cs2.gcsu.edu/public_html/" local="130110501712281078" remote="130110535050000000" />
-<file name="AddItem.js" server="cs2.gcsu.edu/public_html/" local="130110501712261082" remote="130110535040000000" />
-<file name="AddCampus.js" server="cs2.gcsu.edu/public_html/" local="130110501712251070" remote="130110535040000000" />
-<file name="AddDepartment.js" server="cs2.gcsu.edu/public_html/" local="130110501712261082" remote="130110535040000000" />
-<file name="AddUser.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110535040000000" />
-<file name="AddAnnouncement.js" server="cs2.gcsu.edu/public_html/" local="130110501712241077" remote="130110535030000000" />
-<file name="AdminEditUser.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110535050000000" />
-<file name="AdminReportQuery.js" server="cs2.gcsu.edu/public_html/" local="130110537796582666" remote="130110537890000000" />
-<file name="SearchPage.js" server="cs2.gcsu.edu/public_html/" local="130110577619369380" remote="130110577680000000" />
+<file name="jquery-1.9.1.min.js" server="cs2.gcsu.edu/public_html/" local="130110501712491139" remote="130110585220000000" />
+<file name="EditAccount.js" server="cs2.gcsu.edu/public_html/" local="130110501712281078" remote="130110585210000000" />
+<file name="AddItem.js" server="cs2.gcsu.edu/public_html/" local="130110590082492070" remote="130110590120000000" />
+<file name="AddCampus.js" server="cs2.gcsu.edu/public_html/" local="130110501712251070" remote="130110585200000000" />
+<file name="AddDepartment.js" server="cs2.gcsu.edu/public_html/" local="130110501712261082" remote="130110585200000000" />
+<file name="AddUser.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110585200000000" />
+<file name="AddAnnouncement.js" server="cs2.gcsu.edu/public_html/" local="130110501712241077" remote="130110585200000000" />
+<file name="AdminEditUser.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110585210000000" />
+<file name="AdminReportQuery.js" server="cs2.gcsu.edu/public_html/" local="130110537796582666" remote="130110585210000000" />
+<file name="SearchPage.js" server="cs2.gcsu.edu/public_html/" local="130110577619369380" remote="130110585220000000" />
 <file name="jquery-1.9.1.min.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060858076" remote="130109701060000000" />
 <file name="EditAccount.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060788072" remote="130109701060000000" />
 <file name="AddItem.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060768071" remote="130109701060000000" />
@@ -20,6 +20,6 @@
 <file name="AdminEditUser.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060778072" remote="130109701060000000" />
 <file name="AdminReportQuery.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060778072" remote="130109701060000000" />
 <file name="SearchPage.js" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060808074" remote="130109701060000000" />
-<file name="AdminStatuses.js" server="cs2.gcsu.edu/public_html/" local="130110501712281078" remote="130110535050000000" />
-<file name="AdminItems.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110535050000000" />
+<file name="AdminStatuses.js" server="cs2.gcsu.edu/public_html/" local="130110501712281078" remote="130110585210000000" />
+<file name="AdminItems.js" server="cs2.gcsu.edu/public_html/" local="130110501712271075" remote="130110585210000000" />
 </dwsync>

@@ -82,6 +82,6 @@
                 <textarea name="Comment" rows='10' cols="80"><?php echo $_POST['Comment'];?>
         		</textarea>
                 <br/>
-                <input name="submitSearch" type="submit" value="Edit">
+                <input name="submitSearch" type="submit" value="Change">
                 
                 </form>
