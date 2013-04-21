@@ -2,9 +2,12 @@
 $(document).ready(function(){
 	  $("#searchForm").submit(function(e)
 	  {
+		  
 		e.preventDefault();
+		
 		$.post($(this).attr('action'),$("#searchForm").serialize(),
 			function(data,status){
+				$("#divSearchForm").hide();
 				$("div.outputDiv").empty();
 				$("div.outputDiv").append(data);
 				
@@ -58,8 +61,11 @@ $(document).ready(function(){
 							  e.preventDefault();
 							  $.post($(this).attr('action'),$("#updateForm").serialize(),
 								function(data,status){
+									
 									alert("Item updated");
 									$("div.outputDiv").empty();
+									$("#divSearchForm").show();
+									
 									
 						});
 					});//post

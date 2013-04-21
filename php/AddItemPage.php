@@ -107,8 +107,7 @@ class AddItemPage extends BasicPage
                 <br/>
                 Comments:
                 <br/>
-                <textarea name="Comment" rows='10' cols="80">
-        		</textarea>
+                <textarea name="Comment" rows='10' cols="80"></textarea>
                 <br/>
                 <input name="addItem" type="submit" value="Add Item">
                 
