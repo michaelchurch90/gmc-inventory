@@ -93,6 +93,11 @@ table
 display:block;
 float:left;
 }
+a:visited
+{
+	color:#A3050D;
+}
+
 ul.nav li
 {
         display:block;

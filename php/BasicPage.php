@@ -118,7 +118,15 @@ class BasicPage
         private function loadNavigation()
         {
                 echo '<div class="navigation"><ul class="nav">';
-                $this->user->loadNavigation();  
+				try
+				{
+                $this->user->loadNavigation(); 
+				}
+				catch(Exception $e)
+				{
+					session_destroy();
+					echo 'Test<script language="JavaScript">document.location.href="LoginPage.php";</script>';
+				}
                 echo '</ul></div>';     
         }
 		

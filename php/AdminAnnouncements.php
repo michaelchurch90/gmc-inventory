@@ -16,8 +16,7 @@ class AdminAnnouncements extends AdminBase
 		?>
         <h2>Add Annoucement</h2>
         <form action="queries/AdminAnnouuncementsQuery.php" method="post" name="addAnoucement">
-        <textarea name="txtAddAnnouncement" rows='10' cols="80">
-        </textarea>
+        <textarea name="txtAddAnnouncement" rows='10' cols="80"></textarea>
         <input type="submit" name="Submit" value="Submit"/>
         </form>
         

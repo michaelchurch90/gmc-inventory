@@ -13,7 +13,7 @@ class AdminAddCampus extends AdminBase
 	public function loadBody()
 	{
 		?>
-        <h2>Add/Remove Departement</h2>
+        <h2>Add/Remove Department</h2>
         <form id="frmDepAdd" action="queries/AdminAddDepartmentQuery.php" method="post" name="adminAddDepartement">
 
         <input type="text" name="departementName" placeholder="Departement Name"/>
@@ -32,7 +32,7 @@ class AdminAddCampus extends AdminBase
 			?>
         </select>
         <br/>
-        <input type="submit" name="Submit" value="Remove Departement"/>
+        <input type="submit" name="Submit" value="Remove Department"/>
 
         </form>
         <?php

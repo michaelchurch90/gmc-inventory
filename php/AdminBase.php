@@ -25,12 +25,12 @@ class AdminBase extends BasicPage
 			?>
             <div class="divAdminNav" >
             <ul>
-                    <li><a href="AdminAnnouncements.php">Announcements</a></		li>
+        <li><a href="AdminAnnouncements.php">Announcements</a></li>
         <li><a href="AdminReports.php">Reports</a></li>
         <li><a href="AdminAddUser.php">Add Users</a></li>
         <li><a href="AdminEditUser.php">Edit Users</a></li>
         <li><a href="AdminAddCampus.php">Campuses</a></li>
-        <li><a href="AdminAddDepartement.php">Departements</a></li>
+        <li><a href="AdminAddDepartement.php">Departments</a></li>
         <li><a href="AdminStatuses.php">Status Types</a></li>
         <li><a href="AdminItems.php">Item Types</a></li>
             </ul>
