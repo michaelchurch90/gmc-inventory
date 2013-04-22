@@ -57,6 +57,11 @@ $(document).ready(function(){
 						{
 							$("div.outputDiv").empty();
 							$("div.outputDiv").append(data);
+							$("#slctStatus option[value='"+Status+"']").attr('selected','selected');
+							$("#slctDepartment option[value='"+Department+"']").attr('selected','selected');
+							$("#slctCampus option[value='"+Campus+"']").attr('selected','selected');
+							$("#slctItem option[value='"+Item+"']").attr('selected','selected');
+							
 							 $("#updateForm").submit(function(e){
 							  e.preventDefault();
 							  $.post($(this).attr('action'),$("#updateForm").serialize(),
@@ -65,6 +70,8 @@ $(document).ready(function(){
 									alert("Item updated");
 									$("div.outputDiv").empty();
 									$("#divSearchForm").show();
+									
+									
 									
 									
 						});

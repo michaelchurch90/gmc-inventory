@@ -16,9 +16,9 @@ class AdminAddCampus extends AdminBase
         <h2>Add/Remove Department</h2>
         <form id="frmDepAdd" action="queries/AdminAddDepartmentQuery.php" method="post" name="adminAddDepartement">
 
-        <input type="text" name="departementName" placeholder="Departement Name"/>
+        <input type="text" name="departementName" placeholder="Department Name"/>
         <br/>
-        <input type="submit" name="Submit" value="Add Departement"/>
+        <input type="submit" name="Submit" value="Add Department"/>
         </form>
         <form  id="frmDepRemove" action="queries/AdminRemoveDepartmentQuery.php" method="post" name="adminRemoveDepartement">
 		<select name="removeDepartement">

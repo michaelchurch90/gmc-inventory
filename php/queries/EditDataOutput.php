@@ -17,7 +17,7 @@
                 <input disalbed  name="invNumber" type="text" size="20" value="<?php echo $_POST['Inventory'];?>">
                 <br/>
                 Campus: 
-                <select name="campus">
+                <select id="slctCampus" name="campus">
                 <?php
 				$result=$database->getCampuses();
 				$options = $result->getOptionList();
@@ -28,7 +28,7 @@
                 
                 <br/>
                 Department: 
-                <select name="dept">
+                <select id="slctDepartment" name="dept">
   				<?php
 								$result=$database->getDepartments();
 				$options = $result->getOptionList();
@@ -54,9 +54,14 @@
                 <option value="mac">Mac</option>
 				</select>-->
                 <br/>
-                Item
-                <input name="item" type="text" size="20" value="<?php echo $_POST['Item'];?>">
-                <br/>
+                Item Type:
+                <!--<input name="item" type="text" size="20">-->
+                <select id="slctItem"name="item">
+                <?php
+				$options = $database->getItemTypes();
+				echo $options->getOptionList();
+				?>
+                </select>
                 <br/>
                 Model: 
                 <input name="model" type="text" size="20" value="<?php echo $_POST['Model'];?>">
@@ -74,13 +79,18 @@
                 <input name="wanMAC" type="text" size="20" value="<?php echo $_POST['WLan'];?>">
                 
                 <br/>
-                Status:
-                <input name="Status" type = "text" size = "20" value = "<?php echo $_POST['Status'];?>">
+                              Status:
+                <!--<input name="Status" type = "text" size = "20" >-->
+                <select id="slctStatus" name="Status">
+                <?php
+				$options = $database->getStatuses();
+				echo $options->getOptionList();
+				?>
+                </select>
                 <br/>
                 Comments:
                 <br/>
-                <textarea name="Comment" rows='10' cols="80"><?php echo $_POST['Comment'];?>
-        		</textarea>
+                <textarea name="Comment" rows='10' cols="80"><?php echo $_POST['Comment'];?></textarea>
                 <br/>
                 <input name="submitSearch" type="submit" value="Change">
                 

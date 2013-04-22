@@ -12,6 +12,10 @@ class AddItemPage extends BasicPage
 			<?php
 		}
         //put the form elements in here for each page
+				public function loadPageTitle()
+ 		{
+                echo "<title>Add Item</title>";
+        }
         public function loadBody()
         {
                 ?>

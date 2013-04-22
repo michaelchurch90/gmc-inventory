@@ -2,24 +2,24 @@
 <dwsync>
 <file name="BasicPage.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060948082" remote="130109701060000000" />
 <file name="HomeScreen.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060968083" remote="130109701060000000" />
-<file name="BasicPage.php" server="cs2.gcsu.edu/public_html/" local="130110710716273997" remote="130110710780000000" />
-<file name="HomeScreen.php" server="cs2.gcsu.edu/public_html/" local="130110501712653178" remote="130110678790000000" />
+<file name="BasicPage.php" server="cs2.gcsu.edu/public_html/" local="130110750731381360" remote="130110750860000000" />
+<file name="HomeScreen.php" server="cs2.gcsu.edu/public_html/" local="130110501712653178" remote="130110746880000000" />
 <file name="Database.php" server="cs2.gcsu.edu/public_html/" local="130110560137201254" remote="130110560170000000" />
 <file name="User.php" server="G:/xampp-portable/htdocs/GMC/" local="130097695640000000" remote="130097695640000000" />
 <file name="Database.php" server="G:/xampp-portable/htdocs/GMC/" local="130097697700000000" remote="130097697700000000" />
 <file name="User.php" server="cs2.gcsu.edu/public_html/" local="130110501712663180" remote="130110502390000000" />
-<file name="AdminBase.php" server="cs2.gcsu.edu/public_html/" local="130110658093634235" remote="130110662670000000" />
-<file name="AccountPage.php" server="cs2.gcsu.edu/public_html/" local="130110501712503131" remote="130110678630000000" />
-<file name="AddItemPage.php" server="cs2.gcsu.edu/public_html/" local="130110588511808133" remote="130110678650000000" />
-<file name="AdminAddCampus.php" server="cs2.gcsu.edu/public_html/" local="130110501712513163" remote="130110678670000000" />
-<file name="AdminAddDepartement.php" server="cs2.gcsu.edu/public_html/" local="130110662514230229" remote="130110678700000000" />
-<file name="AdminAddUser.php" server="cs2.gcsu.edu/public_html/" local="130110501712553166" remote="130110678710000000" />
-<file name="AdminAnnouncements.php" server="cs2.gcsu.edu/public_html/" local="130110657337939499" remote="130110678720000000" />
-<file name="AdminEditUser.php" server="cs2.gcsu.edu/public_html/" local="130110501712563156" remote="130110678740000000" />
-<file name="AdminReports.php" server="cs2.gcsu.edu/public_html/" local="130110544866526063" remote="130110678760000000" />
-<file name="AdminReportTable.php" server="cs2.gcsu.edu/public_html/" local="130110501712583164" remote="130110678780000000" />
-<file name="LoginPage.php" server="cs2.gcsu.edu/public_html/" local="130110501712653178" remote="130110678790000000" />
-<file name="SearchPage.php" server="cs2.gcsu.edu/public_html/" local="130110600632600371" remote="130110678840000000" />
+<file name="AdminBase.php" server="cs2.gcsu.edu/public_html/" local="130110730006427271" remote="130110746770000000" />
+<file name="AccountPage.php" server="cs2.gcsu.edu/public_html/" local="130110501712503131" remote="130110746730000000" />
+<file name="AddItemPage.php" server="cs2.gcsu.edu/public_html/" local="130110751327941190" remote="130110751400000000" />
+<file name="AdminAddCampus.php" server="cs2.gcsu.edu/public_html/" local="130110501712513163" remote="130110746760000000" />
+<file name="AdminAddDepartement.php" server="cs2.gcsu.edu/public_html/" local="130110778101428149" remote="130110778260000000" />
+<file name="AdminAddUser.php" server="cs2.gcsu.edu/public_html/" local="130110501712553166" remote="130110746800000000" />
+<file name="AdminAnnouncements.php" server="cs2.gcsu.edu/public_html/" local="130110730006427271" remote="130110746810000000" />
+<file name="AdminEditUser.php" server="cs2.gcsu.edu/public_html/" local="130110501712563156" remote="130110746820000000" />
+<file name="AdminReports.php" server="cs2.gcsu.edu/public_html/" local="130110544866526063" remote="130110746850000000" />
+<file name="AdminReportTable.php" server="cs2.gcsu.edu/public_html/" local="130110501712583164" remote="130110746860000000" />
+<file name="LoginPage.php" server="cs2.gcsu.edu/public_html/" local="130110746455929390" remote="130110746880000000" />
+<file name="SearchPage.php" server="cs2.gcsu.edu/public_html/" local="130110600632600371" remote="130110760380000000" />
 <file name="User.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060978083" remote="130109701060000000" />
 <file name="Database.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060958082" remote="130109701060000000" />
 <file name="AdminBase.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060928080" remote="130109701060000000" />
@@ -34,6 +34,6 @@
 <file name="AdminReportTable.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060938081" remote="130109701060000000" />
 <file name="LoginPage.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060968083" remote="130109701060000000" />
 <file name="SearchPage.php" server="C:/xampp/htdocs/gmc-inventory/" local="130109701060978083" remote="130109701060000000" />
-<file name="AdminStatuses.php" server="cs2.gcsu.edu/public_html/" local="130110501712593176" remote="130110678780000000" />
-<file name="AdminItems.php" server="cs2.gcsu.edu/public_html/" local="130110501712563156" remote="130110678750000000" />
+<file name="AdminStatuses.php" server="cs2.gcsu.edu/public_html/" local="130110501712593176" remote="130110746860000000" />
+<file name="AdminItems.php" server="cs2.gcsu.edu/public_html/" local="130110501712563156" remote="130110746840000000" />
 </dwsync>

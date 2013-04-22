@@ -82,7 +82,7 @@ class BasicPage
         }
         public function loadPageTitle()
  		{
-                echo "<title>Basic Page</title>";
+                echo "<title>Search</title>";
         }
         public function loadCSS()
         {
