@@ -41,7 +41,7 @@ class SearchScreen extends BasicPage
                 <select name="campus">
                 <option value="any">Any</option>
                 <?php
-				$result=$this->database->getDistinctCampuses();
+				$result=$this->database->getCampuses();
 				$options = $result->getOptionList();
 				echo $options;
   				//<option value="0">Milledgeville</option>				
